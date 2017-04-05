@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_entry"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bento.journal.ViewEntry"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/backBtn"
+            android:layout_weight="1"
+
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:background="@drawable/buttonshape"/>
+
+        <Button
+            android:text="Delete this Entry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DeleteBtn"
+            android:layout_weight="1"
+
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:background="@drawable/buttonshape"/>
+    </LinearLayout>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bodyinf"
+
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="65dp"
+        android:layout_marginTop="23dp"
+        android:textSize="18sp"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/viewAdd"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewDate"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/titleinf"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewAdd"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/viewDate"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/titleinf"
+        android:layout_marginTop="42dp"
+        android:gravity="center_horizontal"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

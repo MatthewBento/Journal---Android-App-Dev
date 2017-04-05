@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+
+    tools:context="com.example.bento.journal.MainActivity">
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:divider="@drawable/shape"
+        android:dividerHeight="3dp"
+        android:layout_above="@+id/newEntry">
+
+    </ListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/newEntry"
+        android:layout_alignParentBottom="true"
+        android:text="New Entry"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:background="@drawable/buttonshape"
+        />
+
+</RelativeLayout>
