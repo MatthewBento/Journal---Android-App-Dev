@@ -55,7 +55,7 @@ public class NewEntry extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_entry);
         getSupportActionBar().hide();
-
+	//create
         createDatabase();
 
         save = (Button) findViewById(R.id.saveBtn);
