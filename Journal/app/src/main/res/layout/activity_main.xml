@@ -17,7 +17,8 @@
         android:id="@+id/list"
         android:divider="@drawable/shape"
         android:dividerHeight="3dp"
-        android:layout_above="@+id/newEntry">
+        android:layout_above="@+id/newEntry"
+        android:layout_alignParentTop="true">
 
     </ListView>
 
